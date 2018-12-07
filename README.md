@@ -1,2 +1,2 @@
-# A-D
+# ALGORTIM && DATASTRUCTURE
 Algoritm and datstructure
