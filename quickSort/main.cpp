@@ -123,6 +123,8 @@ int main()
 {
 	srand(time(NULL));
 
+	// Approx time taken
+
 	auto start1 = std::chrono::high_resolution_clock::now();
 	quickSort();
 	auto elapsed1 = std::chrono::high_resolution_clock::now() - start1;
