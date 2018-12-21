@@ -4,6 +4,8 @@
 
 const int ARRSIZE{ 100000 };
 
+/* STL(standard template library Sort functions*/
+/***************************************************************/
 void stableSort()
 {
 	int stableArr[ARRSIZE];
@@ -23,7 +25,7 @@ void stdSort()
 	}
 	std::sort(stdArr, stdArr + ARRSIZE);
 }
-
+/****************************************************************/
 
 /* MERGESORT*/
 void Merger(int arr[], int lo, int  mi, int hi) {
@@ -42,9 +44,8 @@ void Merger(int arr[], int lo, int  mi, int hi) {
 	//rest elements of right-half
 	while (j <= hi)
 		temp[k++] = arr[j++];
-	//copy the mergered temporary array to the original array
 	for (k = 0, i = lo; i <= hi; ++i, ++k)
-		arr[i] = temp[k];
+		arr[i] = temp[k];				//copy the mergered temporary array to the original array
 	delete[]temp;
 }
 void MergeSortHelper(int arr[], int lo, int hi) {
